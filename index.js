@@ -39,6 +39,7 @@ var rightVotes = 0
 // 'io' listens for new connections.
 // each new connection comes with it's own socket which represents
 // a unique client.
+
 io.on('connection', function (socket) {
   console.log('a user connected')
 
@@ -70,6 +71,7 @@ io.on('connection', function (socket) {
 
   // When the server receives our custom 'send-chat' event it simply
   // emits the message globally to all of the other sockets.
+
   socket.on('send-chat', function (msg) {
     console.log(msg)
     io.emit('receive-chat', msg)
