@@ -1,0 +1,17 @@
+.box {
+  width: 50%;
+  height: 100%;
+  border: solid black 1px;
+  color: white;
+  font-size: 50pt;
+}
+
+#left {
+  float: left;
+  background-color: red;
+}
+
+#right {
+  float: right;
+  background-color: blue;
+  }
